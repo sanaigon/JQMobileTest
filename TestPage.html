@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="jquery.mobile-1.4.5/jquery-1.11.3.min.js"></script>
@@ -9,7 +10,7 @@
 <body>
  
 <!-- Page 1-->
-<div data-role="page" id="page1">
+<div data-role="page" id="page1" >
            <!-- Panel -->
            <div data-role="panel" id="Menu"> 
                      <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
@@ -17,22 +18,30 @@
  
            <div data-role="header" >
                 <a href="#Menu" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
-                <h1>JKPARK</h1>
+				<h1>페이지제목</h1>
+				<a href="#">Button</a>
+				
            </div>
  
            <div data-role="content">
                 <p>Test Content 1</p>
 				<a href="#page2">Page2</a>
-           </div>
-           <div data-role="footer" >
-                <p>footer1</p>
+	       </div>
+		   
+           <div data-role="footer" class="ui-bar">
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="#">푸터버튼</a>
+					<a href="#">푸터버튼2</a>
+					
+					<a href="#">푸터버튼3</a>
+				</div>
            </div>  
 		 
 </div> 
 
 <!-- Page 2--> 
-<div data-role="page" id="page2">
-	<div data-role="header" >
+<div data-role="page" id="page2" data-add-back-btn="true" >
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="이전으로2">
 		<h1>Page2</h1>
 	</div>
 
@@ -44,7 +53,6 @@
 		<p>Test footer 2</p>
 	</div>
 </div>
-
 
 </body>
 </html>
